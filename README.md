@@ -79,3 +79,6 @@ Los archivos Dockerfile, main.py y requirements.txt se cargan en el repositorio 
 
 <img width="1411" alt="Captura de pantalla 2023-05-15 a la(s) 22 54 04" src="https://github.com/melisatirabassi/prueba/assets/124107756/e5c8b514-e69f-44f9-a2df-5f53af6c625c">
 
+En el siguiente link se encuentra el video explicativo: https://www.dropbox.com/s/ayvm3xbvh6fc7ee/Grabaci%C3%B3n%20de%20pantalla%202023-05-16%20a%20la%28s%29%2010.49.13.mov?dl=0
+
+
