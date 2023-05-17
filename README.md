@@ -5,7 +5,7 @@ En el GitHub https://github.com/santivalor van a encontrar dos repositorios publ
 En el primero esta el codigo de las transformaciones solicitadas sobre el dataset_movies y los archivos para el deploy de FastAPI en Render. En este caso los endpoints de la FAST API son consultas que se realizan sobre el dataset luego de realizar un ETL inicial.
 
 En labs1_ML van a encontrar el codigo completo ETL + Modelo de Machine Learning (ML) y los archivos para el deploy de FastAPI en Render. En este ultimo caso el resultado del endpoint es la recomendacion de 5 peliculas ordenadas por score de similitud una vez que el usuario ingresa una pelicula (lista de 6 peliculas = pelicula ingresada + 5 recomendaciones).
-El deploy en Render del modelo de ML no se pudo realizar ya que se esta utilizando la version gratitua de Render y la implemntacion de la API requiere mas de 512 MB. Igualmente, se dejaron los archivos necesarios para el deploy en el repositorio y si se ejeuta el main.py en la maquina la API funciona de forma local.
+El deploy en Render del modelo de ML no se pudo realizar ya que se esta utilizando la version gratitua de Render y la implemntacion de la API requiere mas de 512 MB. Igualmente, se dejaron los archivos necesarios para el deploy en el repositorio y si se ejecuta el main.py en la maquina la API funciona de forma local.
 
 El codigo en Python fue ejecutado en Google Colab (12 GB de RAM) por falta de capacidad en la maquina local. Se esta utilizando la version gratuita de Colab por lo que para realizar el modelo de machine learning se tuvo que filtrar el dataset movies por peliculas realizadas en Estados Unidos asi Colab no colapsaba al realizar el procesamiento de lenguaje natural.
 
@@ -77,7 +77,8 @@ La lista que esta retornando la API es de 6 valores, ya que incluye la pelicula 
 En la ubicacion del archivo main.py en la maquina local se creo un archivo Dockerfile (sin extension), un entorno virtual (myenv) donde se instalaron las librerias que utiliza la API (pandas, numpy, requests, uvicorn, Fastapi, joblib, etc) y luego se genero el archivo requirements.txt haciendo freeze de myenv.
 Los archivos Dockerfile, main.py y requirements.txt se cargan en el repositorio publico labs1_ML. Se creo un usuario en render.com y se pocedio a crear una Web Service desde el repositorio publico de GitHub (Docker). El deploy fallo por falta de memoria ya que se esta utilizando la version gratuita de 512 MB.
 
-<img width="1411" alt="Captura de pantalla 2023-05-15 a la(s) 22 54 04" src="https://github.com/melisatirabassi/prueba/assets/124107756/e5c8b514-e69f-44f9-a2df-5f53af6c625c">
+![Captura de pantalla 2023-05-17 a la(s) 19 28 34](https://github.com/santivalor/labs1_ML/assets/119902985/8b904b97-7f6d-4414-b4f0-d61549a6c37a)
+
 
 En el siguiente link se encuentra el video explicativo: https://www.dropbox.com/s/ayvm3xbvh6fc7ee/Grabaci%C3%B3n%20de%20pantalla%202023-05-16%20a%20la%28s%29%2010.49.13.mov?dl=0
 
